@@ -1,57 +1,76 @@
-1. What is a Transformer?
-Definition
-A Transformer is a deep learning architecture designed to process sequential data, especially text, by understanding the relationships between different words in a sequence using a mechanism called Self-Attention.
-It was introduced in the research paper Attention Is All You Need (2017).
-Unlike traditional sequence models such as RNNs and LSTMs, Transformers can process multiple tokens in parallel during training and capture relationships between words that are far apart in a sentence.
-Why do we need Transformers?
-Before Transformers, NLP (Natural Language Processing) mainly used RNNs and LSTMs to process text.
-- RNN: Processes tokens one by one, making parallel processing difficult.
-- LSTM: Handles long-term dependencies better than a basic RNN, but still processes sequences step by step.
-- Transformer: Uses self-attention to understand relationships between tokens and allows parallel processing during training.
-Example:
-Consider the sentence:
-“The animal didn't cross the road because it was tired.”
-To understand this sentence, a model needs to identify what the word “it” refers to. Self-attention helps the model determine the relationship between “it” and “animal” using the context of the sentence.
-How does a Transformer work?
-1. Input Text
-Example: "I love machine learning"
+# Transformer — Quick Revision Notes
 
+## 1. What is a Transformer?
 
-2. Tokenization
-The text is split into tokens.
+### Definition
 
+A **Transformer** is a deep learning architecture designed to process sequential data, especially text, using a mechanism called **Self-Attention**.
 
-3. Embeddings + Positional Information
-Tokens are converted into numerical vectors, and information about their positions is added.
+It was introduced in the research paper *Attention Is All You Need* (2017).
 
+Unlike RNNs and LSTMs, Transformers can process multiple tokens in parallel during training and learn relationships between words that are far apart in a sentence.
 
-4. Transformer Blocks
-Self-Attention + Feed-Forward Network
-The model learns relationships between tokens and builds contextual representations.
+### Why do we need Transformers?
 
+Before Transformers, NLP mainly used RNNs and LSTMs.
 
-5. Output Layer
-Produces task-specific predictions, such as the next token, a classification, or a translated sentence.
+* **RNN:** Processes tokens one by one, making parallel processing difficult.
+* **LSTM:** Learns long-term dependencies better than a basic RNN but still processes tokens sequentially.
+* **Transformer:** Uses self-attention to learn relationships between tokens and enables parallel processing during training.
 
+### Example
 
-Note: The exact architecture depends on the task and the type of Transformer model.
-Key features of Transformers
-1. Self-Attention: Helps the model determine which other tokens are relevant to each token.
-2. Parallel Processing: Processes multiple input tokens simultaneously during training, unlike the sequential processing of RNNs and LSTMs.
-3. Long-Range Dependencies: Can learn relationships between tokens that are far apart in a sequence.
-4. Contextual Understanding: Represents a word differently depending on the words surrounding it.
-5. Scalability: Can be trained on large datasets and expanded to build powerful language models.
-Applications of Transformers
-- LLMs: GPT and other large language models.
-- Text Generation: Generating answers, stories, and code.
-- Machine Translation: Translating text from one language to another.
-- Text Understanding: Sentiment analysis, text classification, and question answering.
-- Multimodal AI: Processing combinations of text, images, audio, and other data.
-Important points to remember
-- Transformer is a neural network architecture, not a single specific model.
-- Its key innovation is the self-attention mechanism.
-- It was introduced in the 2017 paper Attention Is All You Need.
-- It uses token embeddings and positional information to represent input sequences.
-- The original Transformer contains an Encoder and a Decoder.
-- Modern Transformer models may use only an encoder, only a decoder, or an encoder-decoder structure.
-In one line: A Transformer is a deep learning architecture that uses attention mechanisms to learn relationships between tokens efficiently, making it a foundation of modern NLP and many generative AI systems.
+Sentence: "The animal didn't cross the road because it was tired."
+
+To understand this sentence, the model needs to identify what the word **"it"** refers to.
+
+Self-attention helps the model learn relationships between "it" and other relevant words in the sentence.
+
+## 2. How Does a Transformer Work?
+
+1. **Input Text:** Example — `"I love machine learning"`
+2. **Tokenization:** Splits text into tokens.
+3. **Embedding:** Converts tokens into numerical vectors.
+4. **Positional Encoding:** Adds information about token positions.
+5. **Transformer Blocks:** Use self-attention and feed-forward networks to learn relationships between tokens.
+6. **Output Layer:** Produces predictions for a task, such as sentiment classification, translation or next-token prediction.
+
+**Note:** The exact architecture depends on the task and model type.
+
+## 3. Key Features of Transformers
+
+1. **Self-Attention:** Determines which other tokens are relevant to a token.
+2. **Parallel Processing:** Processes multiple tokens simultaneously during training.
+3. **Long-Range Dependencies:** Learns relationships between distant tokens.
+4. **Contextual Representations:** Represents a word according to its surrounding context.
+5. **Scalability:** Can be trained on large datasets to build powerful models.
+
+## 4. Applications of Transformers
+
+* **Large Language Models:** GPT and similar models.
+* **Text Generation:** Generating answers, stories and code.
+* **Machine Translation:** Translating between languages.
+* **Text Understanding:** Sentiment analysis, classification and question answering.
+* **Multimodal AI:** Processing text, images, audio and other data.
+
+## 5. Important Points to Remember
+
+* Transformer is an architecture, not one specific model.
+* Self-attention is its key innovation.
+* It was introduced in the 2017 paper *Attention Is All You Need*.
+* It uses token embeddings and positional information.
+* The original Transformer contains an encoder and a decoder.
+* Modern Transformers may use an encoder-only, decoder-only or encoder-decoder architecture.
+
+## 6. One-Minute Revision
+
+* **Transformer:** Attention-based deep learning architecture.
+* **Self-Attention:** Learns relationships between tokens.
+* **Tokenization:** Text to tokens.
+* **Embedding:** Tokens to numerical vectors.
+* **Positional Encoding:** Provides token position information.
+* **Parallel Processing:** Processes multiple tokens simultaneously during training.
+* **Encoder:** Builds contextual representations of input.
+* **Decoder:** Generates outputs using the architecture's available context.
+
+**In one line:** A Transformer uses attention mechanisms to learn relationships between tokens efficiently and forms the foundation of many modern NLP and generative AI systems.
