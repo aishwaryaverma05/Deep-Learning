@@ -186,3 +186,18 @@ A basic ANN has no built-in recurrent memory, while an RNN passes a hidden state
 * GRU → Update and reset gates
 
 **Revision goal:** 15–20 minutes for theory and formulas, then revise the practical and interview questions.
+
+---
+
+## 10. Practical Implementation
+
+**Project:** Movie Review Sentiment Analysis using Simple RNN
+
+* **Dataset:** IMDB Movie Reviews
+* **Goal:** Predict whether a review is positive or negative.
+* **Tools:** Python, TensorFlow, Keras, Kaggle
+* **Implementation:** Text preprocessing, tokenization, padding, embedding, Simple RNN training and evaluation.
+
+**Kaggle Notebook:** [View the complete RNN project](https://www.kaggle.com/code/vermaaishwarya/simple-rnn-proj-imdb)
+
+
