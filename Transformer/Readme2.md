@@ -227,10 +227,8 @@ This output contains information gathered from the relevant tokens.
 
 The complete formula is:
 
-\[
-\boxed{\operatorname{Attention}(Q,K,V)=
-\operatorname{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V}
-\]
+{Attention}(Q,K,V)={softmax}((QK^T)*V/(d_k))
+
 
 Where:
 
