@@ -83,6 +83,9 @@ In the original Transformer, the output dimension remains 512.
 
 <img width="792" height="570" alt="image" src="https://github.com/user-attachments/assets/cafc8131-e75e-410b-945d-078ebf03e2d2" />
 
+Original input ko add kyun karte hain?
+Socho attention layer ne useful information learn ki, lekin original input ki information bhi important hai. Addition se original information aage carry ho sakti hai.
+Ek aur important benefit: deep network mein gradients ko backpropagation ke dauraan flow karne ka easier path milta hai, jisse training easier ho sakti hai.
 
 After Multi-Head Attention, the original input is added to the attention output. This is called a **residual connection** or skip connection.
 
