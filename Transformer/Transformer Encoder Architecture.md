@@ -81,6 +81,9 @@ In the original Transformer, the output dimension remains 512.
 
 ## 6. Residual Connection and Layer Normalization
 
+<img width="792" height="570" alt="image" src="https://github.com/user-attachments/assets/cafc8131-e75e-410b-945d-078ebf03e2d2" />
+
+
 After Multi-Head Attention, the original input is added to the attention output. This is called a **residual connection** or skip connection.
 
 **Formula:**
