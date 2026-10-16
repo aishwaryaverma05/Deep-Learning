@@ -66,7 +66,8 @@ The resulting vectors are passed to the first encoder block.
 
 Multi-Head Self-Attention helps each token understand its relationship with other tokens in the input sequence.
 
-It creates context-aware representations by considering surrounding words.
+It helps with the sentence who have ambiguity in them.
+Ex: The man saw an astronomer with a telescope   -> this has 2 meanings 
 
 **Example:**
 
