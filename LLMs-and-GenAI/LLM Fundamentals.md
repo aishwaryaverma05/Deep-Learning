@@ -143,6 +143,31 @@ Temperature does not retrain the model or directly change its learned knowledge.
 
 The exact effect depends on the model and decoding configuration.
 
+
+Low Temperature (e.g., 0.0 to 0.3)
+
+• What it means: The AI plays it very safe and acts like a strict robot. It almost always picks the word with the highest probability.
+• Best used for: Math, coding, data extraction, or factual Q&A where you need the exact same, correct answer every time.
+• Example:
+	• Prompt: "The capital of France is..."
+	• Low Temperature Output: "Paris." (It picks the most obvious, logical word every single time).
+
+Medium Temperature (e.g., 0.7)
+
+• What it means: A balanced mix. It usually picks sensible words, but occasionally mixes in a slightly different choice to keep things natural.
+• Best used for: General chat, emails, and normal summaries.
+• Example:
+	• Prompt: "Write a polite greeting for an email."
+	• Medium Temperature Output: "Dear John, I hope you are having a wonderful week." (Natural and smooth, with a little variety).
+
+High Temperature (e.g., 1.0 to 1.5+)
+
+• What it means: The AI gets adventurous and takes risks. It flattens the odds so that less-likely, wild, or unusual words have a much better chance of getting picked.
+• Best used for: Creative writing, brainstorming story ideas, or writing poetry.
+• Example:
+	• Prompt: "Describe the sky."
+	• High Temperature Output: "A bruised canvas of violet smoke and liquid amber bleeding into the ocean." (Very creative, colorful, and unpredictable).
+
 ## 9. Limitations of LLMs
 
 - **Hallucination:** Can generate plausible-sounding but incorrect information.
